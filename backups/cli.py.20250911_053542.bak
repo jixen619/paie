@@ -1,0 +1,34 @@
+﻿from pathlib import Path
+import argparse, sys
+
+# --- make "paie_app" importable (so "from core..." works locally) ---
+APP = Path(__file__).resolve().parents[1]   # .../paie_app
+sys.path.insert(0, str(APP))
+
+from core.router import Router               # local import
+SETTINGS = APP / "config" / "settings.yaml"
+
+def main():
+    p = argparse.ArgumentParser(prog="cli.py")
+    p.add_argument("--user", required=True, help="user id / profile owner")
+    p.add_argument("--model", default=None, help="override model (optional)")
+    p.add_argument("--profile", default=None, help="profile name (optional)")
+    p.add_argument("--template", default=None, help="template key (optional)")
+    p.add_argument("--kind", required=True,
+                   choices=["user_story","use_case","test_case","summary"])
+    p.add_argument("prompt", nargs="+")
+    args = p.parse_args()
+    prompt = " ".join(args.prompt)
+
+    r = Router(str(SETTINGS))
+
+    # IMPORTANT: Router.run currently does NOT accept user/profile/template.
+    # Keep those args in the CLI for later logging, but don't pass them now.
+    out = r.run(kind=args.kind, prompt=prompt, model=args.model)
+
+    text = out.get("text") if isinstance(out, dict) else out
+    print(text or "")
+    return 0
+
+if __name__ == "__main__":
+    raise SystemExit(main())

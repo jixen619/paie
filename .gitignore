@@ -1,0 +1,17 @@
+﻿__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+.run/
+runtime/
+kb/
+vectors/
+logs/
+cache/
+*.db
+*.sqlite
+*.pid
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,16 @@
+﻿name: summary
+display: "Summary"
+markdown_order: ["Topic","Key Points","Action Items"]
+rules:
+  Key Points:
+    style: bullet
+    min_items: 3
+  Action Items:
+    style: checkbox
+json_schema:
+  type: object
+  properties:
+    topic: {type: string}
+    keyPoints: {type: array, items: {type: string}}
+    actionItems: {type: array, items: {type: string}}
+  required: [topic, keyPoints]

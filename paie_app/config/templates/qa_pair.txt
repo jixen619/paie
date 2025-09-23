@@ -1,0 +1,4 @@
+﻿Write clear Q&A pairs. For each question:
+- Question
+- Short Answer
+- Notes (assumptions, caveats)

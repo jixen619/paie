@@ -1,0 +1,18 @@
+﻿model:
+  name: llama3.2:latest
+  host: http://127.0.0.1:11434
+  temperature: 0.3
+  top_p: 0.95
+storage:
+  db_path: ./paie_app/paie.db
+  exports_dir: ./paie_app/data/exports
+ui:
+  theme: dark
+  language: en
+rag:
+  enabled: false
+  top_k: 5
+  chunk_size: 800
+  chunk_overlap: 80
+privacy:
+  telemetry: false

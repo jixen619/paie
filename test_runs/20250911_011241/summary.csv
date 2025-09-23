@@ -1,0 +1,4 @@
+﻿timestamp,kind,index,prompt,ms,chars,md_file
+2025-09-11T01:13:02,user_story,1,"Provide me the user story for Two-Factor Authentication Integration module",20891,687,01_user_story.md
+2025-09-11T01:13:16,user_story,2,"Create a user story for a Model Selector so users can switch between local LLMs",13389,443,02_user_story.md
+2025-09-11T01:13:29,user_story,3,"Write a user story for exporting BI datasets (interactions, models, latency) to CSV",12848,445,03_user_story.md

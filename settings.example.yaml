@@ -1,0 +1,16 @@
+model:
+  host: "http://localhost:11434"   # Ollama
+  name: "mistral:instruct"
+  temperature: 0.3
+  top_p: 0.95
+
+storage:
+  db_path: "./data/paie.db"
+  exports_dir: "./exports"
+
+rag:
+  enabled: true
+  top_k: 4
+
+templates:
+  dir: "./data/templates"

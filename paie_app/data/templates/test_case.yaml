@@ -1,0 +1,21 @@
+﻿name: test_case
+display: "Test Case"
+markdown_order: ["Title","Description","Steps"]
+rules:
+  Steps:
+    style: table_like
+    min_items: 3
+json_schema:
+  type: object
+  properties:
+    title: {type: string}
+    description: {type: string}
+    steps:
+      type: array
+      items:
+        type: object
+        properties:
+          step: {type: string}
+          expected: {type: string}
+        required: ["step","expected"]
+  required: [title, description, steps]

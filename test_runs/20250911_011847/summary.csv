@@ -1,0 +1,4 @@
+﻿timestamp,kind,index,prompt,ms,chars,md_file
+2025-09-11T01:19:43,use_case,1,"Provide the use case for Generate Structured Output (preconditions, main flow, alt flows)",54929,1457,01_use_case.md
+2025-09-11T01:20:44,use_case,2,"Provide the use case for Manage History (view, search, download, clear) with exceptions",61300,2102,02_use_case.md
+2025-09-11T01:21:42,use_case,3,"Provide the use case for Export BI CSVs including error handling for disk/permission",56960,1918,03_use_case.md

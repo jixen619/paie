@@ -1,0 +1,21 @@
+﻿timestamp,kind,index,prompt,ms,chars,md_file,attempts,status
+2025-09-11T01:40:23,user_story,1,"Provide me the user story for Two-Factor Authentication Integration module",33142,651,01_user_story.md,1,ok
+2025-09-11T01:40:38,user_story,2,"Create a user story for a Model Selector so users can switch between local LLMs",14251,441,02_user_story.md,1,ok
+2025-09-11T01:40:57,user_story,3,"Write a user story for exporting BI datasets (interactions, models, latency) to CSV",19258,607,03_user_story.md,1,ok
+2025-09-11T01:41:20,user_story,4,"Generate a user story for Chat History grouped by date with per-item downloads",22414,701,04_user_story.md,1,ok
+2025-09-11T01:41:39,user_story,5,"Provide a user story for a Freeform mode that bypasses templates but logs analytics",18788,650,05_user_story.md,1,ok
+2025-09-11T01:42:07,use_case,1,"Provide the use case for Generate Structured Output (preconditions, main flow, alt flows)",27108,888,01_use_case.md,1,ok
+2025-09-11T01:42:33,use_case,2,"Provide the use case for Manage History (view, search, download, clear) with exceptions",26307,1014,02_use_case.md,1,ok
+2025-09-11T01:43:19,use_case,3,"Provide the use case for Export BI CSVs including error handling for disk/permission",45304,1959,03_use_case.md,1,ok
+2025-09-11T01:43:40,use_case,4,"Provide the use case for Switch Model via dropdown with validation and fallback",20625,871,04_use_case.md,1,ok
+2025-09-11T01:43:53,use_case,5,"Provide the use case for View Analytics when DB has data and when it's empty",12422,445,05_use_case.md,1,ok
+2025-09-11T01:44:02,test_case,1,"Create test cases for 2FA login (valid, expired, wrong code, rate limit)",9304,235,01_test_case.md,1,ok
+2025-09-11T01:44:40,test_case,2,"Create test cases for Model Selector (default loads, switch, missing model, fallback)",38009,1591,02_test_case.md,1,ok
+2025-09-11T01:45:25,test_case,3,"Create test cases for BI export (files exist, schema correct, permission error, large data)",44237,1523,03_test_case.md,1,ok
+2025-09-11T01:46:16,test_case,4,"Create test cases for History (search works, MD/JSON/DOCX downloads, clear history)",51006,1647,04_test_case.md,1,ok
+2025-09-11T01:46:42,test_case,5,"Create test cases for SQLite logging (row written, timestamp valid, charts render)",25166,940,05_test_case.md,1,ok
+2025-09-11T01:47:23,summary,1,"Summarize PAIE goals and deliverables for a project brief with risks and assumptions",41322,1548,01_summary.md,1,ok
+2025-09-11T01:47:39,summary,2,"Summarize last week’s analytics trends (usage and average latency) with 3 insights, 2 actions",15167,573,02_summary.md,1,ok
+2025-09-11T01:47:44,summary,3,"Summarize stakeholder interview notes into needs, pain points, success metrics",5149,168,03_summary.md,1,ok
+2025-09-11T01:47:48,summary,4,"Summarize a sprint review into accomplishments, carry-overs, blockers, next actions",3175,81,04_summary.md,1,ok
+2025-09-11T01:48:13,summary,5,"Summarize a competitive scan of local/offline AI tools into differentiators and gaps",25139,966,05_summary.md,1,ok

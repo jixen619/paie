@@ -1,0 +1,4 @@
+﻿For User Stories, always include:
+- Title
+- As a <role>, I want <capability>, so that <benefit>.
+- Acceptance Criteria: 5–8 Gherkin bullets (Given/When/Then).

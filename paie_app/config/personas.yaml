@@ -1,0 +1,18 @@
+﻿personas:
+  default:
+    tone: neutral
+    formality: medium
+    verbosity: medium
+    markdown: true
+  architect:
+    tone: formal
+    formality: high
+    verbosity: medium
+    markdown: true
+    interests: ["architecture", "requirements", "diagrams"]
+  qa_lead:
+    tone: neutral
+    formality: medium
+    verbosity: medium
+    markdown: true
+    interests: ["testing", "quality", "automation"]

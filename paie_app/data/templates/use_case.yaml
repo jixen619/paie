@@ -1,0 +1,14 @@
+﻿name: use_case
+display: "Use Case"
+markdown_order: ["Title","Description","Steps"]
+rules:
+  Steps:
+    style: numbered
+    min_items: 4
+json_schema:
+  type: object
+  properties:
+    title: {type: string}
+    description: {type: string}
+    steps: {type: array, items: {type: string}}
+  required: [title, description, steps]

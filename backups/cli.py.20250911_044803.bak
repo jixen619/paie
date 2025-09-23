@@ -1,0 +1,43 @@
+﻿# cli.py — simple runner for PAIE from terminal (with profile/template)
+from pathlib import Path
+import argparse
+import sys
+
+# Make paie_app importable
+APP = Path(__file__).resolve().parents[1] / "paie_app"
+sys.path.insert(0, str(APP))
+
+from core.router import Router   # noqa: E402
+
+SETTINGS = APP / "config" / "settings.yaml"
+
+def main():
+    p = argparse.ArgumentParser(prog="cli.py")
+    p.add_argument("--user", required=True, help="user id / profile owner")
+    p.add_argument("--model", default=None, help="override model (optional)")
+    p.add_argument("--profile", default=None, help="profile name, e.g. friendly/formal (optional)")
+    p.add_argument("--template", default=None, help="template key, e.g. concise/bug_report (optional)")
+    p.add_argument("--kind", required=True, choices=["user_story","use_case","test_case","summary"])
+    p.add_argument("prompt", nargs="+")
+    args = p.parse_args()
+
+    prompt = " ".join(args.prompt)
+
+    r = Router(str(SETTINGS))
+    # Router.run already worked for you without profile/template.
+    # We extend the call; Router will ignore extras it doesn't use yet.
+    out = r.run(
+        user=args.user,
+        kind=args.kind,
+        prompt=prompt,
+        model=args.model,
+        profile_name=args.profile,
+        template_name=args.template,
+    )
+    # Print a simple, copyable text result
+    text = out.get("text") if isinstance(out, dict) else out
+    print(text or "")
+    return 0
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,1 @@
+﻿Adopt a formal, academic tone. Define terms once, cite assumptions, and conclude with limitations and suggested future work.

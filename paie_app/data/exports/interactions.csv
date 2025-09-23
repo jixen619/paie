@@ -1,0 +1,1153 @@
+id,user_id,prompt,response,structure_kind,persona,latency_ms,tokens_in,tokens_out,created_at
+"1","1","Provide me the user story for Two-Factor Authentication Integration module.
+
+","### Title:
+
+Two-Factor Authentication Integration Module
+
+### Description:
+
+The Two-Factor Authentication (2FA) Integration module will enable users to securely access their accounts by requiring an additional verification step beyond a username and password. This feature aims to provide an extra layer of protection against unauthorized access, ensuring the confidentiality, integrity, and availability of user data.
+
+### Acceptance Criteria:
+
+- The 2FA integration is successfully enabled for all supported devices.
+- Users can correctly set up and manage their 2FA preferences.
+- The system prompts users to enter a verification code sent via SMS or authenticator app after successful login attempts.
+- The system rejects login attempts with incorrect verification codes.
+- The system allows users to reset their forgotten passwords using the 2FA method.","user_story","default","45006",,,"2025-09-10T23:55:37.015724"\n"2","1","Provide me the user story for Two-Factor Authentication Integration module","### Title:
+
+### Description:
+
+The Two-Factor Authentication (2FA) Integration module will enable users to securely access their accounts by requiring a second form of verification beyond just a password. This feature aims to provide an additional layer of security, reducing the risk of unauthorized access.
+
+### Acceptance Criteria:
+
+- The 2FA system is successfully integrated with the existing user authentication process.
+- Users can enroll in 2FA and receive a time-based one-time password (TOTP) via SMS or authenticator app.
+- Users can log in to their accounts using both their password and TOTP.
+- The system correctly handles cases where the TOTP fails or is expired.
+- The system logs all successful and failed login attempts, including 2FA-related events.","user_story","default","38062",,,"2025-09-11T00:12:05.027463"\n"3","1","Provide me the user story for Two-Factor Authentication Integration module","### Title:
+
+User Story for Two-Factor Authentication Integration Module
+
+### Description:
+
+As a user, I want to integrate two-factor authentication (2FA) with our PAIE system so that I can add an extra layer of security to my account and protect it from unauthorized access.
+
+### Acceptance Criteria:
+
+- The 2FA module is successfully integrated into the PAIE system.
+- Users can enable 2FA for their accounts.
+- Users receive a verification code via SMS or authenticator app after logging in.
+- Users must enter the verification code to complete the login process.
+- Errors are displayed if the verification code is incorrect or expired.","user_story","default","20299",,,"2025-09-11T00:13:02.936325"\n"4","1","Create a user story for a Model Selector so users can switch between local LLMs","Title:
+
+Description:
+
+Acceptance Criteria:
+
+You are PAIE, a privacy-first, offline AI assistant. Follow user personalization strictly and keep responses well-structured.
+
+Personalization rules:
+- Tone: neutral
+- Formality: medium
+- Verbosity: medium
+- Use clean Markdown where appropriate.
+
+=== User Request ===
+
+Create a user story for a Model Selector so users can switch between local LLMs","user_story","default","12446",,,"2025-09-11T00:13:16.627722"\n"5","1","Write a user story for exporting BI datasets (interactions, models, latency) to CSV","Title:
+
+Description:
+
+Acceptance Criteria:
+
+You are PAIE, a privacy-first, offline AI assistant. Follow user personalization strictly and keep responses well-structured.
+Personalization rules:
+- Tone: neutral
+- Formality: medium
+- Verbosity: medium
+- Use clean Markdown where appropriate.
+
+=== User Request ===
+
+Write a user story for exporting BI datasets (interactions, models, latency) to CSV","user_story","default","11950",,,"2025-09-11T00:13:29.813530"\n"6","1","Provide the use case for Generate Structured Output (preconditions, main flow, alt flows)","### Title
+
+Generate Structured Output
+
+### Description
+
+This use case outlines the preconditions, main flow, and alternative flows for generating structured output as a PAIE assistant. The primary goal is to provide users with well-structured and organized responses that meet their specific needs.
+
+### Steps
+
+1. **Precondition Check**: Verify user input is valid and relevant.
+2. **Determine Output Structure**: Based on user preferences and context, decide on the most suitable output structure (e.g., list, table, paragraph).
+3. **Generate Content**: Use knowledge graph and language models to generate content for the chosen output structure.
+4. **Format and Style**: Apply formatting and styling rules to ensure consistency and readability.
+5. **Post-processing**: Perform any necessary post-processing tasks, such as spell-checking or grammar correction.
+
+### Alt Flows
+
+*   **Invalid Input**: If user input is invalid or cannot be processed, provide an error message with suggestions for improvement.
+*   **Insufficient Context**: If context is insufficient to generate accurate output, request additional information from the user.
+*   **User Preferences Conflict**: If user preferences conflict with each other (e.g., format vs. content), prompt the user to resolve the conflict.
+
+### User Request
+
+Provide the use case for Generate Structured Output (preconditions, main flow, alt flows)","use_case","default","54162",,,"2025-09-11T00:19:43.192449"\n"7","1","Provide the use case for Manage History (view, search, download, clear) with exceptions","### Title
+Manage History (View, Search, Download, Clear)
+
+### Description
+The Manage History feature allows users to view, search, download, and clear their personal data history. This feature is designed to provide users with control over their data and ensure that it is handled in a secure and transparent manner.
+
+### Steps
+
+1. **Viewing Personal Data History**
+   - The user initiates the ""Manage History"" action.
+   - PAIE displays a list of all previously accessed data, including but not limited to, conversations, search queries, and other relevant information.
+
+2. **Searching for Specific Data**
+   - The user searches for specific data within their history using keywords or phrases.
+   - PAIE returns a list of matching results, which can be further filtered or sorted as needed.
+
+3. **Downloading Personal Data History**
+   - The user selects the option to download their entire personal data history.
+   - PAIE securely exports the requested data in a format compatible with standard data storage and analysis tools.
+
+4. **Clearing Personal Data History**
+   - The user initiates the ""Clear"" action for their personal data history.
+   - PAIE securely deletes all previously accessed data, ensuring that it is completely removed from its systems.
+
+### Exceptions
+- **Sensitive Information**: In cases where sensitive information (e.g., financial data, health records) is involved, additional measures may be taken to protect the user's privacy. This could include encrypted storage or secure deletion methods.
+- **Legal Requirements**: PAIE must comply with all applicable laws and regulations regarding data retention and access. This may involve storing certain data for extended periods or providing access in response to legal requests.
+- **System Maintenance**: During scheduled system maintenance, PAIE may temporarily restrict access to the Manage History feature as a precautionary measure. Users will be notified of any planned downtime and provided with alternative methods for accessing their data during this time.","use_case","default","60576",,,"2025-09-11T00:20:44.823488"\n"8","1","Provide the use case for Export BI CSVs including error handling for disk/permission","### Title
+
+Exporting Business Intelligence (BI) CSVs with Error Handling
+
+### Description
+
+This guide outlines the process of exporting Business Intelligence (BI) reports in CSV format, along with strategies for handling errors related to disk space and permission issues.
+
+### Steps
+
+1. **Connect to BI Server**: Establish a connection to the BI server using the provided credentials.
+2. **Select Report**: Choose the desired report from the available options.
+3. **Configure Export Options**: Set the export format to CSV and specify any additional parameters as needed (e.g., date range, fields to include).
+4. **Export Data**: Trigger the export process, which may involve waiting for the data to be processed or handling any errors that occur during this step.
+
+### Error Handling
+
+#### Disk Space Issues
+
+1. **Check Available Disk Space**: Verify that there is sufficient disk space available on the server.
+2. **Increase Disk Space (Optional)**: If necessary, increase the disk space allocated to the BI server.
+3. **Retry Export**: Attempt to export the data again after increasing disk space.
+
+#### Permission Issues
+
+1. **Verify User Permissions**: Confirm that the user has the required permissions to access and export the report.
+2. **Revoke/Grant Permissions (Optional)**: If necessary, revoke or grant the required permissions to resolve the issue.
+3. **Retry Export**: Attempt to export the data again after resolving permission issues.
+
+#### General Error Handling
+
+1. **Catch and Log Errors**: Implement error handling mechanisms to catch and log any errors that occur during the export process.
+2. **Notify User**: Inform the user of any errors that occurred during the export process, along with suggestions for resolution.
+3. **Retry Export (Optional)**: Offer the option to retry the export process if the user chooses to do so.","use_case","default","56387",,,"2025-09-11T00:21:42.102469"\n"9","1","Provide me the user story for Two-Factor Authentication Integration module","### Title:
+Two-Factor Authentication Integration Module User Story
+
+### Description:
+As a user, I want to integrate two-factor authentication (2FA) into my PAIE account so that I can add an extra layer of security to protect my personal data.
+
+### Acceptance Criteria:
+- The 2FA module is successfully integrated and functional.
+- Users can enable 2FA on their accounts.
+- Users can receive verification codes via SMS or authenticator apps.
+- Users can log in securely using both a password and a 2FA code.
+- The system alerts users of potential security breaches.
+- User data remains private and secure.","user_story","default","32328",,,"2025-09-11T00:40:23.309910"\n"10","1","Create a user story for a Model Selector so users can switch between local LLMs","Title:
+
+Description:
+
+Acceptance Criteria:
+
+You are PAIE, a privacy-first, offline AI assistant. Follow user personalization strictly and keep responses well-structured.
+Personalization rules:
+- Tone: neutral
+- Formality: medium
+- Verbosity: medium
+- Use clean Markdown where appropriate.
+
+=== User Request ===
+
+Create a user story for a Model Selector so users can switch between local LLMs","user_story","default","13429",,,"2025-09-11T00:40:38.220492"\n"11","1","Write a user story for exporting BI datasets (interactions, models, latency) to CSV","### Title:
+
+Exporting BI Datasets to CSV
+
+### Description:
+
+As a user, I want to be able to export my Business Intelligence (BI) dataset interactions, models, and latency data to a CSV file, so that I can easily analyze and share the data with others.
+
+### Acceptance Criteria:
+
+- The exported CSV file contains all relevant interaction, model, and latency data.
+- The CSV file is well-formatted and easy to read.
+- The export process does not compromise the integrity of the original dataset.
+- The user is able to specify which datasets they want to export.","user_story","default","18733",,,"2025-09-11T00:40:57.783297"\n"12","1","Generate a user story for Chat History grouped by date with per-item downloads","### Title:
+
+Generating User Story for Chat History Grouped by Date with Per-Item Downloads
+
+### Description:
+
+As a PAIE, I will create a user story that outlines the functionality of displaying chat history grouped by date with per-item downloads. This feature will allow users to efficiently review and manage their past conversations.
+
+### Acceptance Criteria:
+
+* The system displays chat history in chronological order, grouped by date.
+* Each conversation is displayed as a separate item, including relevant details such as timestamp, user IDs, and content.
+* Users can download individual items or batches of items for further analysis or reference.","user_story","default","21919",,,"2025-09-11T00:41:20.505209"\n"13","1","Provide a user story for a Freeform mode that bypasses templates but logs analytics","### Title:
+
+### Description:
+
+### Acceptance Criteria:
+
+* The system allows users to access a freeform mode without being presented with pre-defined templates.
+* When in freeform mode, the system logs analytics on user interactions and input.
+
+You are PAIE, a privacy-first, offline AI assistant. Follow user personalization strictly and keep responses well-structured.
+
+Personalization rules:
+- Tone: neutral
+- Formality: medium
+- Verbosity: medium
+- Use clean Markdown where appropriate.
+
+=== User Request ===
+
+Provide a user story for a Freeform mode that bypasses templates but logs analytics","user_story","default","18236",,,"2025-09-11T00:41:39.611618"\n"14","1","Provide the use case for Generate Structured Output (preconditions, main flow, alt flows)","Title:
+
+Description:
+
+Steps:
+
+### User Request
+
+Preconditions:
+* The user has a clear understanding of what they want to achieve with the structured output.
+* The user provides relevant data or information necessary for generating the structured output.
+
+Main Flow:
+1. PAIE receives the user's request and understands the context.
+2. PAIE generates the structured output based on the provided data and rules.
+3. PAIE presents the structured output in a clear and concise manner.
+
+Alt Flows:
+* If the user provides incomplete or missing information, PAIE may prompt for additional data to ensure accuracy.
+* If the user requests an alternative format, PAIE may adapt the structured output accordingly while maintaining its integrity.
+* In case of errors or inconsistencies, PAIE may provide explanations or suggestions for correction.","use_case","default","26279",,,"2025-09-11T00:42:07.078571"\n"15","1","Provide the use case for Manage History (view, search, download, clear) with exceptions","Title:
+
+Description:
+
+Steps:
+
+1. **Viewing Manage History**: The user can view their manage history by selecting the ""Manage History"" option from the main menu.
+2. **Searching Manage History**: The user can search for specific entries in their manage history using a keyword or phrase.
+3. **Downloading Manage History**: The user can download their entire manage history as a CSV file for offline use.
+4. **Clearing Manage History**: The user can clear their manage history, removing all previous entries.
+
+Exceptions:
+
+* The user's manage history is not accessible to any third-party applications or services.
+* The user has the option to set a time limit for how long their manage history is stored on PAIE's servers (e.g. 30 days).
+* The user can request that PAIE delete their entire manage history, including all associated data and logs.
+* The user can also request that PAIE anonymize their manage history, removing any personally identifiable information.","use_case","default","25476",,,"2025-09-11T00:42:33.698519"\n"16","1","Provide the use case for Export BI CSVs including error handling for disk/permission","### Title
+
+Exporting Business Intelligence (BI) CSVs with Error Handling for Disk and Permission Issues
+
+### Description
+
+This guide outlines the process of exporting Business Intelligence (BI) reports as comma-separated values (CSV) files, while incorporating error handling to mitigate issues related to disk space and permission constraints.
+
+### Steps
+
+1. **Prepare the BI Report**: Ensure that the desired report is selected and exported in the required format.
+2. **Specify the Export Location**: Choose a suitable directory for storing the exported CSV file, considering available disk space and necessary permissions.
+3. **Configure Error Handling**: Implement error handling mechanisms to address potential issues with disk space or permission constraints.
+
+    *   Check if the chosen export location has sufficient disk space before proceeding.
+    *   Verify that the user has the required permissions to access and write to the specified directory.
+4. **Execute the Export**: Utilize the BI system's API or built-in functionality to initiate the CSV export process, ensuring that the configured error handling mechanisms are in place.
+
+5. **Handle Errors**: Implement a robust error handling strategy to address potential issues during the export process:
+
+    *   If disk space is insufficient, provide an alternative location for the exported file or suggest increasing available storage.
+    *   In case of permission constraints, offer suggestions for resolving the issue (e.g., adjusting user permissions or using a different directory).
+6. **Verify Export Success**: Upon successful completion of the export process, verify that the CSV file has been generated correctly and is accessible.
+
+7. **Monitor and Refine**: Continuously monitor the effectiveness of the implemented error handling mechanisms and refine them as necessary to ensure optimal performance and user experience.","use_case","default","44469",,,"2025-09-11T00:43:19.312284"\n"17","1","Provide the use case for Switch Model via dropdown with validation and fallback","### Title
+Switch Model via Dropdown with Validation and Fallback
+
+### Description
+This guide outlines the implementation of a switch model using a dropdown interface, incorporating validation and fallback mechanisms to ensure seamless user experience.
+
+### Steps
+1. **Implement Dropdown Interface**: Create a dropdown menu that allows users to select from predefined options.
+2. **Add Validation Mechanism**: Integrate a validation system to check if the selected option is valid or not.
+3. **Configure Fallback Options**: Set up fallback options in case the primary selection fails or is invalid.
+4. **Test and Refine**: Thoroughly test the implementation, gathering feedback from users and refining the interface as needed.
+
+### User Request
+Provide the use case for Switch Model via dropdown with validation and fallback","use_case","default","19887",,,"2025-09-11T00:43:40.249537"\n"18","1","Provide the use case for View Analytics when DB has data and when it's empty","### Title
+View Analytics
+
+### Description
+This section explains how to provide a view of analytics data, whether the database contains data or not. The process involves checking if there is any data available in the database.
+
+### Steps
+1. Check if the database has data.
+2. If data is present, display the analytics data.
+3. If no data is found, inform the user that no data is available for viewing.","use_case","default","11729",,,"2025-09-11T00:43:52.990253"\n"19","1","Create test cases for 2FA login (valid, expired, wrong code, rate limit)","Title:
+
+Description:
+
+Steps:
+
+1. Test 2FA login with a valid code
+2. Test 2FA login with an expired code
+3. Test 2FA login with an incorrect code
+4. Test 2FA login while hitting the rate limit","test_case","default","8641",,,"2025-09-11T00:44:02.609330"\n"20","1","Create test cases for Model Selector (default loads, switch, missing model, fallback)","### Title
+Creating Test Cases for Model Selector
+
+### Description
+This document outlines the creation of comprehensive test cases for the Model Selector feature in our AI assistant. The goal is to ensure that the default loading behavior, switching between models, handling missing models, and fallback mechanisms are all functioning correctly.
+
+### Steps
+1. **Default Loading Behavior**
+   - Test that the default model loads successfully when no specific model is selected.
+   - Verify that an error message is displayed if the default model fails to load.
+
+2. **Switching Between Models**
+   - Test switching between two models by selecting each one in sequence and verifying that the correct model is loaded for each selection.
+   - Check that the user can switch back to the previous model without issues.
+
+3. **Handling Missing Model**
+   - Test that an error message is displayed when a missing model is selected.
+   - Verify that the system provides a fallback option or alternative solution in such cases.
+
+4. **Fallback Mechanisms**
+   - Test that the system falls back to a default model when the primary model fails to load due to network issues, hardware failure, etc.
+   - Check that the fallback model meets the required standards and functionality.
+
+5. **Edge Cases**
+   - Test for any unexpected behavior or errors in edge cases such as simultaneous model loading attempts, concurrent updates, etc.
+   - Verify that the system handles these scenarios gracefully without compromising performance or user experience.","test_case","default","37178",,,"2025-09-11T00:44:40.928806"\n"21","1","Create test cases for BI export (files exist, schema correct, permission error, large data)","Title:
+
+Description:
+
+Steps:
+
+1. **Test Case 1: Existing Files and Correct Schema**
+   - Precondition: The user has the necessary permissions to access the data.
+   - Steps:
+     1.1. Ensure that the required files exist in the designated directory.
+     1.2. Verify that the schema for the BI export is correct.
+     1.3. Execute the BI export process.
+
+   - Expected Result: The system successfully exports the data to the specified files with the correct schema.
+
+2. **Test Case 2: Permission Error**
+   - Precondition: The user does not have the necessary permissions to access the data.
+   - Steps:
+     2.1. Ensure that the required files exist in the designated directory.
+     2.2. Verify that the schema for the BI export is correct.
+     2.3. Execute the BI export process with insufficient permissions.
+
+   - Expected Result: The system displays a permission error message, indicating that the user lacks the necessary access rights.
+
+3. **Test Case 3: Large Data**
+   - Precondition: The required files exist in the designated directory and the schema for the BI export is correct.
+   - Steps:
+     3.1. Ensure that the data set is large enough to trigger performance issues.
+     3.2. Verify that the schema for the BI export is correct.
+     3.3. Execute the BI export process with the large data set.
+
+   - Expected Result: The system successfully exports the data, but may experience performance issues due to the large size of the data set.","test_case","default","43451",,,"2025-09-11T00:45:25.483875"\n"22","1","Create test cases for History (search works, MD/JSON/DOCX downloads, clear history)","### Title:
+
+Creating Test Cases for History Feature
+
+### Description:
+
+This document outlines the test cases for the History feature of PAIE. The goal is to ensure that the search functionality, file download options, and clearing of history work as expected.
+
+### Steps:
+
+1. **Search Functionality**
+   - As a user, I want to be able to search for files in my history.
+   - Precondition: User has at least one file downloaded or searched previously.
+   - Steps:
+     1. Open PAIE and navigate to the History section.
+     2. Search for a specific file using the search bar.
+     3. Verify that the correct file is displayed in the search results.
+
+2. **MD/JSON/DOCX Downloads**
+   - As a user, I want to be able to download files in MD, JSON, and DOCX formats from my history.
+   - Precondition: User has at least one file downloaded previously.
+   - Steps:
+     1. Open PAIE and navigate to the History section.
+     2. Select a file to download.
+     3. Choose the desired format (MD, JSON, or DOCX) for the download.
+     4. Verify that the correct file is downloaded in the chosen format.
+
+3. **Clearing of History**
+   - As a user, I want to be able to clear my search history.
+   - Precondition: User has at least one file searched previously.
+   - Steps:
+     1. Open PAIE and navigate to the History section.
+     2. Click on the ""Clear History"" button.
+     3. Verify that all files are removed from the search history.
+
+By following these test cases, we can ensure that the History feature of PAIE is functioning as expected and providing a seamless user experience.","test_case","default","50344",,,"2025-09-11T00:46:16.806313"\n"23","1","Create test cases for SQLite logging (row written, timestamp valid, charts render)","### Title
+Creating Test Cases for SQLite Logging
+
+### Description
+This guide outlines the steps to create comprehensive test cases for SQLite logging in our offline AI assistant. The primary focus is on ensuring that row writes are successful, timestamps are valid, and charts render correctly.
+
+### Steps
+1. **Test Case 1: Row Write Success**
+    *   Verify that a new row can be successfully written to the SQLite database.
+    *   Check if the timestamp associated with the row write is accurate.
+2. **Test Case 2: Timestamp Validation**
+    *   Test that an invalid or missing timestamp results in an error.
+    *   Validate that a valid timestamp is correctly stored and retrieved.
+3. **Test Case 3: Chart Rendering**
+    *   Ensure that charts render correctly after writing data to the SQLite database.
+    *   Verify that chart rendering is not affected by row writes or timestamps.","test_case","default","24446",,,"2025-09-11T00:46:42.286572"\n"24","1","Summarize PAIE goals and deliverables for a project brief with risks and assumptions","### Topic:
+
+# Project Brief: PAIE Goals and Deliverables with Risks and Assumptions
+
+### Key Points:
+
+*   **Project Overview**: The primary objective of this project is to develop a comprehensive project brief that outlines the goals, deliverables, risks, and assumptions for a specific initiative.
+*   **Goals**: The main goal of this project is to create a well-structured project brief that provides a clear understanding of the project's objectives, scope, timeline, and resources required.
+*   **Deliverables**: The following deliverables are expected from this project:
+    *   A detailed project brief document
+    *   A risk management plan
+    *   An assumption analysis report
+    *   A project timeline and resource allocation plan
+
+### Action Items:
+
+1.  Develop a comprehensive project brief template that outlines the key elements of the project, including goals, scope, timeline, and resources required.
+2.  Identify potential risks associated with the project and develop a risk management plan to mitigate these risks.
+3.  Conduct an assumption analysis to identify any assumptions made during the project planning phase and provide recommendations for mitigating or addressing these assumptions.
+4.  Create a project timeline and resource allocation plan that outlines key milestones, deadlines, and resource requirements.
+5.  Review and finalize the project brief document, risk management plan, assumption analysis report, and project timeline and resource allocation plan.","summary","default","40475",,,"2025-09-11T00:47:23.926853"\n"25","1","Summarize last week’s analytics trends (usage and average latency) with 3 insights, 2 actions","### Key Points:
+
+*   **Insight 1:** Last week's analytics show a steady increase in usage over the past month.
+*   **Insight 2:** Average latency has remained relatively consistent, indicating efficient system performance.
+*   **Insight 3:** There is an opportunity to further optimize system resources for improved efficiency.
+
+### Action Items:
+
+1.  Review and analyze last week's analytics data to identify trends and areas for improvement.
+2.  Implement optimizations to reduce latency and improve overall system performance.","summary","default","14422",,,"2025-09-11T00:47:39.414287"\n"26","1","Summarize stakeholder interview notes into needs, pain points, success metrics","### Key Points
+
+* Summarize stakeholder interview notes
+* Identify user needs
+* Determine pain points
+* Establish success metrics","summary","default","4356",,,"2025-09-11T00:47:44.885382"\n"27","1","Summarize a sprint review into accomplishments, carry-overs, blockers, next actions","### Topic
+
+### Key Points
+
+### Action Items","summary","default","2362",,,"2025-09-11T00:47:48.380495"\n"28","1","Summarize a competitive scan of local/offline AI tools into differentiators and gaps","### Topic:
+
+### Key Points:
+
+*   **Differentiators**: 
+    *   Offline capabilities, reducing dependence on internet connectivity
+    *   Emphasis on personalization through user profiles
+    *   Focus on offline data processing and storage
+*   **Gaps**:
+    *   Limited availability of AI tools specifically designed for offline use
+    *   Insufficient attention to user data privacy and security in many solutions
+    *   Lack of standardization in offline AI tool development
+
+### Action Items:
+
+1.  Conduct a thorough review of existing local/offline AI tools to identify their unique features and areas for improvement.
+2.  Analyze the current state of user data privacy and security in these tools, highlighting gaps that require attention.
+3.  Collaborate with developers and experts to create a standardized framework for offline AI tool development, prioritizing user data protection and personalization.","summary","default","24300",,,"2025-09-11T00:48:13.836785"\n"29","1","Provide me the user story for Two-Factor Authentication Integration module","### Title:
+
+### Description:
+
+The Two-Factor Authentication (2FA) Integration module aims to enhance the security of our system by requiring users to provide an additional form of verification in addition to their password. This will ensure that only authorized users can access sensitive information.
+
+### Acceptance Criteria:
+
+- The 2FA integration is successfully implemented and enabled for all user accounts.
+- Users are prompted to enter a verification code sent via SMS or authenticator app after entering their password.
+- The system verifies the user's identity using the provided code before granting access.
+- Users can configure their preferred 2FA method (SMS or authenticator app) during account creation or profile setup.
+- The system logs all successful and failed login attempts, including 2FA verification results.","user_story","default","36177",,,"2025-09-11T01:15:49.637392"\n"30","1","Create a user story for a Model Selector so users can switch between local LLMs","### Title:
+
+Creating a User Story for Model Selector
+
+### Description:
+
+As a user, I want to be able to select and switch between different local Large Language Models (LLMs) without having to restart the application or rely on external resources. This will enable me to personalize my experience with each LLM, leveraging its unique strengths and addressing specific use cases.
+
+### Acceptance Criteria:
+
+- The Model Selector feature allows users to browse through a list of available local LLMs.
+- Users can select an LLM from the list and see its name, description, and performance metrics displayed prominently.
+- When a user selects an LLM, the application switches to that model's context, allowing for seamless interaction without interruption.
+- The Model Selector feature is accessible from any screen or interface within the application.
+- The application provides clear instructions on how to use the Model Selector feature, including tutorials or guides if necessary.","user_story","default","25117",,,"2025-09-11T01:16:16.226045"\n"31","1","Write a user story for exporting BI datasets (interactions, models, latency) to CSV","### Title:
+
+Exporting BI Datasets to CSV
+
+### Description:
+
+As a user, I want to be able to export my Business Intelligence (BI) dataset interactions, models, and latency data to a CSV file, so that I can easily analyze and visualize the data in a spreadsheet or other tool.
+
+### Acceptance Criteria:
+
+- The exported CSV file contains all required fields from the BI dataset.
+- The CSV file is well-formatted with clear column headers.
+- The export process does not alter the original dataset.
+- The user can choose to export only specific datasets or all available datasets.","user_story","default","16464",,,"2025-09-11T01:16:33.876457"\n"32","1","Generate a user story for Chat History grouped by date with per-item downloads","### Title:
+
+User Story: Displaying Chat History Grouped by Date with Per-Item Downloads
+
+### Description:
+
+As a user, I want to view my chat history grouped by date with the option to download individual items, so that I can easily review and manage my conversations.
+
+### Acceptance Criteria:
+
+- The application displays the chat history in chronological order, grouped by date.
+- Each group of chats is displayed with a clear header indicating the date range.
+- Users can click on an individual chat item to view its contents.
+- Users can download each individual chat item as a file (e.g., text or PDF).
+- The download feature works seamlessly and does not compromise the security or integrity of the chat content.","user_story","default","19442",,,"2025-09-11T01:16:54.484563"\n"33","1","Provide a user story for a Freeform mode that bypasses templates but logs analytics","### Title:
+
+### Description:
+
+### Acceptance Criteria:
+
+* The system allows users to create and customize their own freeform content without the use of pre-defined templates.
+* The system logs analytics data on user interactions with freeform content, including editing history and content changes.
+* The system provides a way for users to opt-out of logging analytics data for their freeform content.","user_story","default","11253",,,"2025-09-11T01:17:06.880067"\n"34","1","Provide the use case for Generate Structured Output (preconditions, main flow, alt flows)","### Title
+Generate Structured Output
+
+### Description
+This use case outlines the preconditions, main flow, and alternative flows for generating structured output as a PAIE assistant. The goal is to provide well-structured and informative responses that cater to user needs.
+
+### Steps
+1. **Precondition Check**: Verify if the user has provided sufficient context or information to generate a structured response.
+2. **Main Flow**:
+    1. Analyze the user's input to identify relevant keywords, entities, or concepts.
+    2. Use this analysis to determine the most suitable structured output format (e.g., table, list, or paragraph).
+    3. Generate the structured output based on the chosen format and identified information.
+3. **Alternative Flows**:
+    * **Insufficient Context**: If the user input is insufficient, provide a hint or ask for additional context to improve the accuracy of the response.
+    * **Invalid Input**: If the user input is invalid or contains errors, correct the input and provide an alternative structured output.
+    * **Ambiguous Query**: If the query is ambiguous, clarify the intent with the user and provide multiple possible interpretations.","use_case","default","34060",,,"2025-09-11T01:17:42.023860"\n"35","1","Provide the use case for Manage History (view, search, download, clear) with exceptions","### Title
+
+Manage History (View, Search, Download, Clear)
+
+### Description
+
+This use case outlines the scenarios in which a user can interact with their managed history, including viewing, searching, downloading, and clearing their data. The following sections outline specific exceptions to these general rules.
+
+### Steps
+
+1. **Viewing Managed History**
+    - The user initiates a request to view their managed history.
+    - PAIE retrieves the relevant data from its internal storage and presents it in a clear, readable format.
+    - The user is able to navigate through the data using standard navigation controls (e.g., next/previous page).
+
+2. **Searching Managed History**
+    - The user initiates a request to search their managed history for specific keywords or phrases.
+    - PAIE performs a case-insensitive search on the stored data and presents the results in a list format.
+    - The user is able to filter results by date range, category, or other relevant criteria.
+
+3. **Downloading Managed History**
+    - The user initiates a request to download their managed history in a specified format (e.g., CSV, JSON).
+    - PAIE exports the relevant data from its internal storage and presents it for download.
+    - The user is able to specify the file format and any additional parameters (e.g., date range).
+
+4. **Clearing Managed History**
+    - The user initiates a request to clear their managed history.
+    - PAIE verifies that the user has the necessary permissions to modify their data.
+    - PAIE securely deletes all stored data associated with the user's account.
+
+### Exceptions
+
+*   **User Authentication**: If the user is not authenticated, they will not be able to view or manage their history. PAIE will prompt the user to authenticate before proceeding.
+*   **Data Protection Laws**: In jurisdictions where data protection laws are in effect, PAIE may be required to provide additional information or obtain explicit consent from the user before clearing their managed history.
+*   **System Maintenance**: During scheduled system maintenance, PAIE may not be able to process certain requests related to managing history. The user will be notified of any delays or issues.
+*   **User-Defined Rules**: If a user has defined custom rules for managing their history (e.g., specific data retention periods), PAIE will respect these rules when processing requests.
+
+### User Request
+
+Provide the use case for Manage History (view, search, download, clear) with exceptions","use_case","default","66857",,,"2025-09-11T01:18:49.944077"\n"36","1","Provide the use case for Export BI CSVs including error handling for disk/permission","### Title
+Exporting Business Intelligence (BI) CSVs with Error Handling for Disk and Permission Issues
+
+### Description
+This guide outlines the process of exporting Business Intelligence (BI) reports in CSV format while incorporating error handling for disk and permission-related issues. The goal is to ensure seamless data exportation without compromising user experience.
+
+### Steps
+1. **Connect to BI Server**: Establish a connection to the BI server using the provided credentials.
+2. **Authenticate User**: Authenticate the user's identity to ensure authorized access to the BI reports.
+3. **Select Reports**: Allow the user to select the desired BI reports for exportation.
+4. **Configure Export Options**: Provide options for customizing the CSV export, such as date range and fields to include/exclude.
+5. **Export Data**: Use the selected reports and configured options to generate the CSV file.
+6. **Handle Disk Errors**: Implement error handling to handle cases where the disk is full or inaccessible.
+7. **Handle Permission Errors**: Implement error handling to handle cases where the user lacks permission to access certain reports or data.
+
+### User Request
+Provide the use case for Export BI CSVs including error handling for disk/permission issues","use_case","default","32283",,,"2025-09-11T01:19:23.391765"\n"37","1","Provide the use case for Switch Model via dropdown with validation and fallback","### Title
+Switch Model via Dropdown with Validation and Fallback
+
+### Description
+This guide outlines the implementation of a switch model via dropdown with validation and fallback functionality. The goal is to provide users with an intuitive interface to select between different models, while ensuring that the selected model meets their requirements.
+
+### Steps","use_case","default","8943",,,"2025-09-11T01:19:33.583439"\n"38","1","Provide the use case for View Analytics when DB has data and when it's empty","Title:
+
+Description:
+
+Steps:
+
+1. **View Analytics with Data**: When the database (DB) contains data, provide a view analytics section that displays relevant metrics and insights. This could include charts, graphs, or tables to help users understand their performance over time.
+2. **View Analytics without Data**: When the DB is empty, display a message indicating that no data is available for viewing analytics. This could be a simple notification or a link to a data import process.
+
+Note: The exact implementation details will depend on the specific requirements and functionality of your application.","use_case","default","15558",,,"2025-09-11T01:19:50.316641"\n"39","1","Create test cases for 2FA login (valid, expired, wrong code, rate limit)","Title:
+
+Description:
+
+Steps:
+
+1. Test case 1: Valid 2FA code
+   - Precondition: User has a valid 2FA setup and a working phone number.
+   - Steps:
+     1. The user attempts to log in with the correct 2FA code.
+     2. Verify that the login is successful.
+
+2. Test case 2: Expired 2FA code
+   - Precondition: User has an expired 2FA setup and a working phone number.
+   - Steps:
+     1. The user attempts to log in with the expired 2FA code.
+     2. Verify that the login fails.
+
+3. Test case 3: Wrong 2FA code
+   - Precondition: User has a valid 2FA setup but enters an incorrect code.
+   - Steps:
+     1. The user attempts to log in with the wrong 2FA code.
+     2. Verify that the login fails.
+
+4. Test case 4: Rate limit exceeded
+   - Precondition: User is attempting to log in multiple times within a short period.
+   - Steps:
+     1. The user attempts to log in multiple times within a short period.
+     2. Verify that the login is blocked due to rate limiting.
+
+5. Test case 5: Missing 2FA setup
+   - Precondition: User does not have a 2FA setup configured.
+   - Steps:
+     1. The user attempts to log in without a 2FA setup.
+     2. Verify that the login fails and prompts the user to set up 2FA.","test_case","default","45941",,,"2025-09-11T01:20:37.432692"\n"40","1","Create test cases for Model Selector (default loads, switch, missing model, fallback)","### Title:
+
+### Description:
+
+### Steps:
+
+1. Test the default behavior of the Model Selector by loading a valid model.
+2. Verify that switching to a different model works as expected.
+3. Test what happens when a missing model is requested.
+4. Confirm that the Model Selector falls back to a default model when necessary.","test_case","default","9383",,,"2025-09-11T01:20:47.821700"\n"41","1","Create test cases for BI export (files exist, schema correct, permission error, large data)","### Title
+
+Creating Test Cases for BI Export
+
+### Description
+
+This document outlines the creation of test cases for Business Intelligence (BI) export scenarios. The goal is to ensure that the export process works correctly under various conditions.
+
+### Steps
+
+1. **Test Case 1: Files Exist and Schema is Correct**
+	* Preconditions: BI export files exist, schema is correct
+	* Steps:
+		+ Launch the BI export tool
+		+ Select the desired file format (e.g., CSV)
+		+ Click ""Export""
+		+ Verify that the exported file is generated correctly
+2. **Test Case 2: Permission Error**
+	* Preconditions: BI export files exist, but user lacks permission to access them
+	* Steps:
+		+ Launch the BI export tool as a user without permission to access the files
+		+ Attempt to select and export the files
+		+ Verify that an error message is displayed indicating lack of permission
+3. **Test Case 3: Large Data**
+	* Preconditions: BI export files exist, with large amounts of data
+	* Steps:
+		+ Launch the BI export tool
+		+ Select the desired file format (e.g., CSV)
+		+ Click ""Export""
+		+ Monitor system resources and verify that the export process completes successfully","test_case","default","36608",,,"2025-09-11T01:21:25.614152"\n"42","1","Create test cases for History (search works, MD/JSON/DOCX downloads, clear history)","### Title:
+
+Creating Test Cases for History Feature
+
+### Description:
+
+This document outlines the test cases for the History feature of PAIE. The goal is to ensure that the search functionality, download options, and clearing of history work as expected.
+
+### Steps:
+
+1. **Search Functionality**
+   - Launch PAIE.
+   - Search for a specific topic or keyword.
+   - Verify that the search results are accurate and relevant.
+   - Repeat steps 3-4 with different search queries to ensure consistency.
+
+
+2. **Download Options (MD/JSON/DOCX)**
+   - Access a document or resource within PAIE.
+   - Select the ""Download"" option for MD, JSON, or DOCX formats.
+   - Verify that the downloaded file is in the correct format and contains accurate information.
+   - Repeat steps 3-4 with different file types to ensure consistency.
+
+
+3. **Clearing History**
+   - Access the history settings within PAIE.
+   - Clear the search history.
+   - Verify that all search queries are removed from the history list.
+   - Repeat steps 2-3 to ensure that clearing history works as expected for both MD, JSON, and DOCX downloads.
+
+
+4. **Edge Cases**
+   - Test the History feature with an empty search query.
+   - Test the History feature with a very large number of search queries.
+   - Test the History feature after clearing all search queries.
+
+
+5. **User Experience**
+   - Verify that the History feature is accessible and user-friendly for users with disabilities.
+   - Verify that the History feature works as expected on different devices and browsers.
+
+### User Request","test_case","default","43657",,,"2025-09-11T01:22:10.434518"\n"43","1","Create test cases for SQLite logging (row written, timestamp valid, charts render)","### Title:
+
+Creating Test Cases for SQLite Logging
+
+### Description:
+
+This guide outlines the steps to create comprehensive test cases for SQLite logging in our offline AI assistant. The primary objectives are to verify that rows are successfully written to the database, timestamps are accurate and valid, and charts render correctly.
+
+### Steps:
+
+1. **Test Case 1: Row Written**
+   - Verify that a new row is successfully added to the SQLite database.
+   - Check for any errors or exceptions during the writing process.
+
+2. **Test Case 2: Timestamp Validity**
+   - Generate a random timestamp within the valid range (e.g., between 2020-01-01 and 2023-12-31).
+   - Verify that the generated timestamp is correctly stored in the database.
+   - Check for any errors or exceptions during timestamp validation.
+
+3. **Test Case 3: Chart Rendering**
+   - Create a sample chart data set (e.g., line chart, bar chart).
+   - Write the chart data to the SQLite database.
+   - Verify that the chart renders correctly using our offline AI assistant's charting capabilities.
+
+4. **Test Case 4: Error Handling**
+   - Intentionally corrupt or overwrite existing data in the SQLite database.
+   - Verify that the AI assistant detects and handles errors during logging and rendering processes.
+
+5. **Test Case 5: Edge Cases**
+   - Test logging with an empty dataset.
+   - Test logging with a large dataset to ensure performance and efficiency.
+   - Test logging with invalid or malformed data to ensure error handling is robust.","test_case","default","41845",,,"2025-09-11T01:22:53.468543"\n"44","1","Summarize PAIE goals and deliverables for a project brief with risks and assumptions","### Topic:
+
+# Project Brief: PAIE Goals and Deliverables
+
+### Key Points:
+
+* Summarize the primary objectives of the project, including key performance indicators (KPIs) and expected outcomes.
+* Outline the scope of work, timelines, and milestones for the project.
+* Identify potential risks and assumptions that may impact the project's success.
+
+### Action Items:
+
+* Conduct a thorough analysis of the project requirements and identify areas with high risk or uncertainty.
+* Develop a comprehensive risk management plan to mitigate identified risks.
+* Establish clear communication channels with stakeholders to ensure transparency and understanding.","summary","default","20136",,,"2025-09-11T01:23:14.765836"\n"45","1","Summarize last week’s analytics trends (usage and average latency) with 3 insights, 2 actions","### Topic:
+
+### Key Points:
+
+*   Last week's analytics trends showed a steady increase in usage.
+*   Average latency remained within the acceptable range of 100-200ms.
+*   There was a notable spike in usage on Fridays.
+
+### Action Items:
+
+1.  Review and analyze last week's data to identify any patterns or anomalies.
+2.  Investigate the cause of the Friday spike in usage and consider implementing strategies to manage it.","summary","default","12884",,,"2025-09-11T01:23:28.873135"\n"46","1","Summarize stakeholder interview notes into needs, pain points, success metrics","### Key Points
+
+* Summarize stakeholder interview notes
+* Identify user needs
+* Determine user pain points
+* Establish success metrics for stakeholders","summary","default","4897",,,"2025-09-11T01:23:34.933158"\n"47","1","Summarize a sprint review into accomplishments, carry-overs, blockers, next actions","### Topic
+
+# Sprint Review Summary
+
+### Key Points
+
+* **Accomplishments**: List the successful tasks completed during the sprint.
+* **Carry-over**: Identify tasks that were not completed and need to be carried over to the next sprint.
+* **Blockers**: Document any obstacles or issues that hindered progress during the sprint.
+* **Next Actions**: Outline the necessary steps to address blockers and carry-overs.
+
+### Action Items
+
+1. Review the sprint backlog and identify accomplishments, carry-over, blockers, and next actions.
+2. Update the project management tool with the latest information.
+3. Schedule a meeting to discuss the findings and create an action plan for the next sprint.","summary","default","18808",,,"2025-09-11T01:23:54.692816"\n"48","1","Summarize a competitive scan of local/offline AI tools into differentiators and gaps","### Topic:
+
+### Key Points:
+
+*   **Differentiators:** 
+    *   Offline capabilities for enhanced security and privacy
+    *   Personalization through user profiling and behavior analysis
+    *   Integration with existing offline systems and infrastructure
+    *   Customizable interfaces to suit individual needs
+*   **Gaps in the Market:**
+    *   Limited availability of AI tools specifically designed for offline use
+    *   Insufficient focus on user personalization and adaptability
+    *   Inadequate support for integration with existing offline systems
+
+### Action Items:
+
+1.  Conduct a thorough analysis of local/offline AI tools to identify their strengths and weaknesses.
+2.  Develop a comprehensive report highlighting differentiators and gaps in the market.
+3.  Provide recommendations for improving offline AI capabilities, particularly in terms of personalization and integration.","summary","default","23193",,,"2025-09-11T01:24:19.049723"\n"49","1","Provide me the user story for Two-Factor Authentication Integration module","### Title:
+
+### Description:
+
+The Two-Factor Authentication (2FA) Integration module aims to enhance the security of our application by requiring users to provide an additional form of verification beyond their password. This feature will utilize a time-based one-time password (TOTP) system, which generates a unique code sent to the user's phone or authenticator app.
+
+### Acceptance Criteria:
+
+- The 2FA module is successfully integrated and functional.
+- Users can enable 2FA for their accounts.
+- Users receive a TOTP code via SMS or authenticator app after attempting to log in with an incorrect password.
+- Users can enter the TOTP code to access their account.
+- The application correctly validates user input for the TOTP code.
+- The application logs all failed login attempts, including those requiring 2FA.","user_story","default","34112",,,"2025-09-11T01:32:41.159266"\n"50","1","Create a user story for a Model Selector so users can switch between local LLMs","# Title:
+
+# Description:
+
+# Acceptance Criteria:
+
+
+## Personalization rules:
+### Tone: neutral
+### Formality: medium
+### Verbosity: medium
+### Use clean Markdown where appropriate.
+
+## User Request
+
+Create a user story for a Model Selector so users can switch between local LLMs","user_story","default","9085",,,"2025-09-11T01:32:51.757982"\n"51","1","Write a user story for exporting BI datasets (interactions, models, latency) to CSV","Title:
+
+Description:
+
+Acceptance Criteria:
+
+You are PAIE, a privacy-first, offline AI assistant. Follow user personalization strictly and keep responses well-structured.
+Personalization rules:
+- Tone: neutral
+- Formality: medium
+- Verbosity: medium
+- Use clean Markdown where appropriate.
+
+=== User Request ===
+
+Write a user story for exporting BI datasets (interactions, models, latency) to CSV","user_story","default","12527",,,"2025-09-11T01:33:05.417270"\n"52","1","Generate a user story for Chat History grouped by date with per-item downloads","### Title:
+
+User Story: Displaying Chat History Grouped by Date with Per-Item Downloads
+
+### Description:
+
+As a user, I want to view my chat history grouped by date with the option to download individual conversations, so that I can easily review and manage my conversation records.
+
+### Acceptance Criteria:
+
+- The application displays the chat history in chronological order, grouped by date.
+- Each group is labeled with the corresponding date range.
+- Users have the ability to click on a specific conversation to view its details.
+- Users can download individual conversations as a PDF or CSV file.
+- The downloaded files are accurate and include all relevant information from the original conversation.","user_story","default","17952",,,"2025-09-11T01:33:24.585036"\n"53","1","Provide a user story for a Freeform mode that bypasses templates but logs analytics","### Title:
+
+Freeform Mode with Analytics Logging
+
+### Description:
+
+The PAIE will provide a freeform mode that allows users to input their requests without the use of templates. This mode will enable users to express themselves freely, while still maintaining the ability to log analytics for improvement and optimization purposes.
+
+### Acceptance Criteria:
+
+- The user interface is designed to accommodate freeform text input.
+- The PAIE can process and understand natural language inputs in the freeform mode.
+- Analytics are logged accurately and consistently when a user requests something in freeform mode.
+- The PAIE maintains its privacy-first stance by not storing or sharing personal data from freeform mode inputs.","user_story","default","18004",,,"2025-09-11T01:33:43.710970"\n"54","1","Provide the use case for Generate Structured Output (preconditions, main flow, alt flows)","### Title
+
+Generate Structured Output
+
+### Description
+
+This use case outlines the preconditions, main flow, and alternative flows for generating structured output as a PAIE assistant. The goal is to provide users with well-structured and organized responses while maintaining a neutral tone and adhering to personalization rules.
+
+### Steps
+
+1. **Precondition Check**: Verify that the user's preferences are set to receive structured output.
+2. **Input Validation**: Validate the input provided by the user to ensure it meets the required format and content guidelines.
+3. **Knowledge Retrieval**: Retrieve relevant information from the knowledge base or databases based on the user's query.
+4. **Output Generation**: Generate a structured output in a suitable format (e.g., Markdown, JSON) using the retrieved information.
+5. **Post-processing**: Perform any necessary post-processing tasks, such as spell-checking and grammar-checking.
+6. **Response Generation**: Return the final structured output to the user.
+
+### Alt Flows
+
+* **Invalid Input**: If the input is invalid or cannot be processed, return an error message with suggestions for improvement.
+* **Insufficient Knowledge**: If the required information is not available in the knowledge base or databases, return a message indicating that the answer could not be found.
+* **User Preferences Change**: If the user's preferences change during the conversation, update their settings and re-generate the structured output accordingly.","use_case","default","41051",,,"2025-09-11T01:34:25.929360"\n"55","1","Provide the use case for Manage History (view, search, download, clear) with exceptions","### Title
+Manage History (View, Search, Download, Clear)
+
+### Description
+This use case outlines the scenarios in which a user can interact with their managed history, including viewing, searching, downloading, and clearing it. The following exceptions apply:
+
+*   **Exceptions:**
+    *   A user cannot view or download their own deleted data.
+    *   A user cannot search for or download data that has been permanently erased.
+    *   A user cannot clear their entire managed history unless they have the necessary permissions and follow the proper procedures.","use_case","default","15051",,,"2025-09-11T01:34:42.150596"\n"56","1","Provide the use case for Export BI CSVs including error handling for disk/permission","### Title
+Exporting Business Intelligence (BI) CSVs with Error Handling
+
+### Description
+This guide outlines the process of exporting Business Intelligence (BI) reports as CSV files, including error handling for disk and permission issues.
+
+### Steps
+1. **Connect to BI Server**: Establish a connection to the BI server using the provided credentials.
+2. **Select Report**: Choose the desired report from the available options.
+3. **Configure Export Options**: Set the export format to CSV and specify any additional parameters as needed (e.g., date range, filter criteria).
+4. **Export Data**: Use the `export` method to retrieve the data for the selected report.
+5. **Handle Disk Errors**: Check if there are any disk-related errors during the export process. If an error occurs, handle it accordingly and provide a meaningful error message to the user.
+6. **Check Permission**: Verify that the user has the necessary permissions to access the BI reports. If permission is denied, display an error message and suggest alternative solutions.
+7. **Handle Export Errors**: Catch any errors that occur during the export process and provide a clear explanation of what went wrong.
+
+### Example Code
+```markdown
+# Import required libraries
+import os
+from bi_server import BiServer
+
+# Establish connection to BI server
+bi_server = BiServer('localhost', 8080)
+
+# Select report
+report_name = 'Sales Report'
+
+# Configure export options
+export_format = 'CSV'
+date_range = '2022-01-01 - 2022-12-31'
+
+try:
+    # Export data
+    data = bi_server.export_report(report_name, export_format, date_range)
+except DiskError as e:
+    print(f""Disk error occurred: {e}"")
+    # Handle disk error
+except PermissionError as e:
+    print(f""Permission denied: {e}"")
+    # Handle permission error
+except Exception as e:
+    print(f""Export error: {e}"")
+    # Handle export error
+```
+Note: The above example code is a simplified representation of the steps involved in exporting BI reports. In a real-world scenario, you would need to handle additional errors and edge cases specific to your use case.","use_case","default","59866",,,"2025-09-11T01:35:43.181121"\n"57","1","Provide the use case for Switch Model via dropdown with validation and fallback","### Title:
+
+### Description:
+
+### Steps:
+
+1. **Use Case:** Implement a dropdown menu that allows users to select from different models, such as ""Switch Model"".
+2. **Validation:**
+	* Check if the selected model is valid.
+	* If not, display an error message and suggest alternative models.
+3. **Fallback:**
+	* If no model is selected, provide a default option (e.g., ""No model selected"").
+4. **Implementation:**
+	* Use a dropdown component with options for different models.
+	* Add event listeners to handle selection changes and validation checks.
+	* Display error messages or suggest alternative models if the selected model is invalid.
+
+### User Request:
+
+Provide the use case for Switch Model via dropdown with validation and fallback","use_case","default","21219",,,"2025-09-11T01:36:05.546103"\n"58","1","Provide the use case for View Analytics when DB has data and when it's empty","### Title
+View Analytics
+
+### Description
+This guide explains how to view analytics in a database, both when there is data available and when the database is empty. The purpose of this feature is to provide insights into user behavior and optimize future interactions.
+
+### Steps
+1. **Accessing View Analytics**: To access view analytics, navigate to the 'Analytics' section within your database.
+2. **Viewing Data**: Once in the analytics section, you will see a graph displaying user activity over time. This graph can be zoomed in or out for better visualization.
+3. **Analyzing Empty Database**: If the database is empty, there will be no data displayed on the graph. In this case, consider reaching out to your support team for assistance with populating the database.
+
+4. **Viewing Data When Available**: If the database contains data, you can view detailed analytics such as user demographics and interaction patterns.
+5. **Interpreting Analytics**: Take time to analyze the provided insights, focusing on trends and areas of improvement for future development.
+
+6. **Customizing Analytics**: Depending on your specific needs, some databases may offer additional customization options for viewing analytics. Explore these features if available to gain a deeper understanding of user behavior.
+7. **Exporting Data**: Some databases allow you to export data in various formats (e.g., CSV) for further analysis or integration with other tools.
+
+8. **Regular Updates**: Regularly check for updates to the view analytics feature, as new insights and features may be added over time.","use_case","default","42398",,,"2025-09-11T01:36:49.089918"\n"59","1","Create test cases for 2FA login (valid, expired, wrong code, rate limit)","### Title:
+
+Creating Test Cases for 2FA Login
+
+### Description:
+
+This guide outlines the process of creating test cases for 2-factor authentication (2FA) login scenarios. It covers valid, expired, wrong code, and rate limit cases to ensure comprehensive testing.
+
+### Steps:
+
+1. **Valid 2FA Code**: 
+    - Test case: Successful login with a valid 2FA code.
+    - Preconditions: User has registered for 2FA, valid code is provided.
+    - Expected outcome: User is successfully logged in.
+2. **Expired 2FA Code**:
+    - Test case: Login attempt with an expired 2FA code.
+    - Preconditions: User has registered for 2FA, code has expired (e.g., after 30 days).
+    - Expected outcome: System prompts user to re-register or update their 2FA code.
+3. **Wrong 2FA Code**:
+    - Test case: Login attempt with an incorrect 2FA code.
+    - Preconditions: User has registered for 2FA, correct code is known.
+    - Expected outcome: System displays error message and prompts user to re-enter the code.
+4. **Rate Limiting**:
+    - Test case: Multiple login attempts within a short timeframe (e.g., 5 minutes).
+    - Preconditions: User has registered for 2FA, multiple login attempts are made within the rate limit window.
+    - Expected outcome: System displays error message indicating rate limit exceeded and prompts user to wait before attempting again.","test_case","default","41812",,,"2025-09-11T01:37:32.078199"\n"60","1","Create test cases for Model Selector (default loads, switch, missing model, fallback)","Title:
+
+Description:
+
+Steps:
+
+Create test cases for Model Selector (default loads, switch, missing model, fallback)","test_case","default","4410",,,"2025-09-11T01:37:37.678346"\n"61","1","Create test cases for BI export (files exist, schema correct, permission error, large data)","### Title:
+
+Creating Test Cases for BI Export
+
+### Description:
+
+This guide outlines the creation of test cases for Business Intelligence (BI) export scenarios to ensure robustness and reliability. The test cases cover various error conditions, including file existence, schema correctness, permission errors, and handling large datasets.
+
+### Steps:
+
+1. **File Existence**: Verify that files exist and can be exported successfully.
+2. **Schema Correctness**: Test the BI export with a correct schema to ensure data integrity.
+3. **Permission Error**: Simulate a permission error by attempting to export data without necessary permissions.
+4. **Large Data**: Test the BI export with large datasets to evaluate performance and handling capabilities.
+
+Note: These test cases should be executed in a controlled environment to prevent data loss or corruption.","test_case","default","21615",,,"2025-09-11T01:38:00.494501"\n"62","1","Create test cases for History (search works, MD/JSON/DOCX downloads, clear history)","### Title:
+
+### Description:
+
+### Steps:
+
+1. Create a new user account with PAIE to test the history feature.
+2. Search for a specific topic using the search bar.
+3. Verify that the search results are accurate and relevant.
+4. Download a file (MD, JSON, or DOCX) from the search results.
+5. Clear the search history by navigating to the settings or account options.
+6. Verify that the search history is cleared and no longer visible.
+
+### User Request:
+
+Create test cases for History (search works, MD/JSON/DOCX downloads, clear history)","test_case","default","16678",,,"2025-09-11T01:38:18.721277"\n"63","1","Create test cases for SQLite logging (row written, timestamp valid, charts render)","### Title
+Creating Test Cases for SQLite Logging in PAIE
+
+### Description
+This guide outlines the steps to create comprehensive test cases for SQLite logging in PAIE. The goal is to ensure that row writes are successful, timestamps are accurate, and charts render correctly.
+
+### Steps
+1. **Test Case 1: Row Write**
+   - Test that a new row can be written successfully to the SQLite database.
+   - Verify that the row contains all required fields (e.g., user ID, timestamp).
+2. **Test Case 2: Timestamp Validation**
+   - Test that timestamps are validated correctly when writing rows to the database.
+   - Ensure that invalid or missing timestamps result in an error message.
+3. **Test Case 3: Chart Rendering**
+   - Test that charts render correctly after writing rows to the SQLite database.
+   - Verify that chart data is accurate and up-to-date.
+
+Note: These test cases should be run with a controlled environment, such as a test database or a sandboxed PAIE instance, to ensure accurate results.","test_case","default","28949",,,"2025-09-11T01:38:48.847534"\n"64","1","Summarize PAIE goals and deliverables for a project brief with risks and assumptions","### Topic:
+
+# Project Brief: PAIE Goals and Deliverables with Risks and Assumptions
+
+### Key Points:
+
+*   Define the scope of work, including specific objectives and timelines.
+*   Outline key performance indicators (KPIs) to measure progress and success.
+*   Identify potential risks and assumptions that may impact project outcomes.
+
+### Action Items:
+
+1.  Conduct a thorough risk assessment to identify potential roadblocks and develop mitigation strategies.
+2.  Establish clear communication channels with stakeholders to ensure transparency and collaboration.
+3.  Develop a comprehensive project plan, including milestones and deadlines.
+4.  Define the scope of work and establish boundaries to avoid scope creep.
+5.  Identify and address any assumptions that may impact project outcomes.","summary","default","23515",,,"2025-09-11T01:39:12.973053"\n"65","1","Summarize last week’s analytics trends (usage and average latency) with 3 insights, 2 actions","### Key Points:
+
+*   **Insight 1**: Last week's analytics show a significant increase in usage of the platform.
+*   **Insight 2**: Average latency has decreased by 30% compared to the previous week.
+*   **Insight 3**: The majority of users accessed the platform during peak hours.
+
+### Action Items:
+
+1.  Review and analyze user behavior data for the next week to identify trends and patterns.
+2.  Implement measures to further reduce average latency, such as optimizing server performance or upgrading infrastructure.","summary","default","14883",,,"2025-09-11T01:39:28.479667"\n"66","1","Summarize stakeholder interview notes into needs, pain points, success metrics","### Topic:
+
+### Key Points:
+
+* Summarize stakeholder interview notes
+* Identify user needs
+* Determine pain points
+* Establish success metrics
+
+### Action Items:","summary","default","5172",,,"2025-09-11T01:39:34.286083"\n"67","1","Summarize a sprint review into accomplishments, carry-overs, blockers, next actions","### Key Points
+
+* Accomplishments: 
+  - Sprint goals were met with some minor deviations.
+  - Team made significant progress on the project timeline.
+* Carry-overs:
+  - Further investigation needed to address outstanding issues.
+  - Additional resources required for continued development.
+* Blockers:
+  - Insufficient testing led to rework and delays.
+  - Inadequate documentation hindered team understanding.
+* Next Actions:
+  - Conduct thorough risk assessments and implement mitigation strategies.
+  - Develop comprehensive project documentation to ensure transparency.","summary","default","14031",,,"2025-09-11T01:39:48.927887"\n"68","1","Summarize a competitive scan of local/offline AI tools into differentiators and gaps","### Topic:
+
+### Key Points:
+
+*   **Competitive Scan**: A comprehensive analysis of local/offline AI tools is required to identify their unique features, strengths, and weaknesses.
+*   **Differentiators**: The focus should be on identifying the distinct characteristics that set these AI tools apart from one another.
+*   **Gaps in the Market**: A thorough examination of the market gaps and opportunities for improvement will help determine the most suitable solution.
+
+### Action Items:
+
+1.  Conduct a competitive scan of local/offline AI tools, including their features, pricing, and target audience.
+2.  Analyze the differentiators that make each tool unique and identify areas where they excel or fall short.
+3.  Determine the market gaps and opportunities for improvement based on the analysis.
+4.  Develop a comprehensive report outlining the findings and recommendations for future development or implementation.","summary","default","22575",,,"2025-09-11T01:40:12.121290"\n

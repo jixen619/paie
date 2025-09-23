@@ -1,0 +1,16 @@
+﻿name: user_story
+display: "User Story"
+markdown_order: ["Title","Description","Acceptance Criteria"]
+rules:
+  Title: "One concise line."
+  Description: "As a <role>, I want <capability>, so that <benefit>."
+  Acceptance Criteria:
+    style: bullet
+    min_items: 3
+json_schema:
+  type: object
+  properties:
+    title: {type: string}
+    description: {type: string}
+    acceptanceCriteria: {type: array, items: {type: string}}
+  required: [title, description, acceptanceCriteria]
