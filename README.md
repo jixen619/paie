@@ -34,6 +34,8 @@ Features:
 | Database                 | SQLite                |
 | Logging                  | JSON + DB audit trail |
 
+<img width="1674" height="850" alt="image" src="https://github.com/user-attachments/assets/5584860d-19aa-4c6a-8bc0-61b599425329" />
+
 
 <img width="1920" height="1020" alt="Screenshot 2025-09-22 102847" src="https://github.com/user-attachments/assets/eea9659c-c272-466a-b871-2a4dd813fb0e" />
 
