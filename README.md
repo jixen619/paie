@@ -1,8 +1,10 @@
-PAIE — Personalized AI Engine
+## PAIE — Personalized AI Engine
 
 Offline, privacy-first assistant using local LLMs (Ollama), Streamlit UI, RAG, and an SQLite audit trail.
 
-Overview:
+---
+
+# Overview:
 
 PAIE (Personalized AI Engine) is a fully offline, privacy-preserving AI assistant designed for personal and professional productivity.
 It runs local LLMs via Ollama, features a modern Streamlit GUI, includes CLI support, and integrates Retrieval-Augmented Generation (RAG) with a secure SQLite audit trail.
@@ -15,7 +17,7 @@ Secure offline inference
 Data Analytics & BI integration
 Python automation + RAG pipelines
 
-Features:
+# Features:
 
 🔒 100% offline (no cloud API required)
 🤖 Local LLMs (Ollama-supported models like Llama 3)
@@ -24,6 +26,9 @@ Features:
 📚 RAG-based knowledge retrieval
 🗃 SQLite audit logging for conversations
 ⚡ Fast, lightweight, and easily customizable
+
+---
+# 🛠 Tech Stack
 
 | Component                | Technology            |
 | ------------------------ | --------------------- |
@@ -34,6 +39,7 @@ Features:
 | Database                 | SQLite                |
 | Logging                  | JSON + DB audit trail |
 
+# 📸 Screenshots
 
 <img width="1674" height="850" alt="image" src="https://github.com/user-attachments/assets/5584860d-19aa-4c6a-8bc0-61b599425329" />
 
@@ -48,17 +54,13 @@ Features:
 
 <img width="869" height="901" alt="image" src="https://github.com/user-attachments/assets/b5c4507e-a53e-41f9-a70e-ac5c11f5d080" />
 
-Run (GUI)
-1.Create virtual environment
-py -m venv .venv && .\.venv\Scripts\activate
+```md
+## Run (GUI)
+1. Create venv: \py -m venv .venv && .\.venv\Scripts\activate\
+2. Install deps: \pip install -r requirements.txt\
+3. Start: \streamlit run paie_app/ui/app_streamlit.py\
 
-2.Install dependencies
-pip install -r requirements.txt
-
-3.Start Streamlit app
-streamlit run paie_app/ui/app_streamlit.py
-
-Run (CLI)
+## Run (CLI)
 python paie_app/ui/cli.py --model "llama3.2:latest" --user "alice"
 
 VS Code launch.json
