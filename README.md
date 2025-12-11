@@ -2,7 +2,7 @@ PAIE — Personalized AI Engine
 
 Offline, privacy-first assistant using local LLMs (Ollama), Streamlit UI, RAG, and an SQLite audit trail.
 
-Overview
+Overview:
 
 PAIE (Personalized AI Engine) is a fully offline, privacy-preserving AI assistant designed for personal and professional productivity.
 It runs local LLMs via Ollama, features a modern Streamlit GUI, includes CLI support, and integrates Retrieval-Augmented Generation (RAG) with a secure SQLite audit trail.
@@ -15,7 +15,7 @@ Secure offline inference
 Data Analytics & BI integration
 Python automation + RAG pipelines
 
-Features
+Features:
 
 🔒 100% offline (no cloud API required)
 🤖 Local LLMs (Ollama-supported models like Llama 3)
@@ -33,3 +33,10 @@ Features
 | RAG / Document Retrieval | Custom pipeline       |
 | Database                 | SQLite                |
 | Logging                  | JSON + DB audit trail |
+
+
+<img width="1920" height="1020" alt="Screenshot 2025-09-22 102847" src="https://github.com/user-attachments/assets/eea9659c-c272-466a-b871-2a4dd813fb0e" />
+
+<img width="1197" height="750" alt="Screenshot 2025-09-21 184204" src="https://github.com/user-attachments/assets/3f30c747-10ce-4141-8b73-0f041fb1eeb2" />
+
+<img width="1920" height="1020" alt="Screenshot 2025-09-18 144808" src="https://github.com/user-attachments/assets/0f466d85-4e55-4cbb-a50b-a8d282a50fcf" />
