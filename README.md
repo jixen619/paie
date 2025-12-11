@@ -34,6 +34,7 @@ Features:
 | Database                 | SQLite                |
 | Logging                  | JSON + DB audit trail |
 
+
 <img width="1674" height="850" alt="image" src="https://github.com/user-attachments/assets/5584860d-19aa-4c6a-8bc0-61b599425329" />
 
 
@@ -47,6 +48,56 @@ Features:
 
 <img width="869" height="901" alt="image" src="https://github.com/user-attachments/assets/b5c4507e-a53e-41f9-a70e-ac5c11f5d080" />
 
-<img width="1686" height="920" alt="image" src="https://github.com/user-attachments/assets/390f568c-c666-40e8-859a-3e1506e4d1bd" />
+Run (GUI)
+1.Create virtual environment
+py -m venv .venv && .\.venv\Scripts\activate
 
+2.Install dependencies
+pip install -r requirements.txt
+
+3.Start Streamlit app
+streamlit run paie_app/ui/app_streamlit.py
+
+Run (CLI)
+python paie_app/ui/cli.py --model "llama3.2:latest" --user "alice"
+
+VS Code launch.json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PAIE GUI (Streamlit)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/.venv/Scripts/streamlit.exe",
+      "args": ["run", "paie_app/ui/app_streamlit.py"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "PAIE CLI",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/paie_app/ui/cli.py",
+      "args": ["--model", "llama3.2:latest", "--user", "alice"],
+      "console": "integratedTerminal"
+    }
+  ]
+}
+
+Project Structure
+paie/
+│
+├── paie_app/
+│   ├── ui/
+│   │   ├── app_streamlit.py      # GUI
+│   │   ├── cli.py                # CLI
+│   ├── rag/                      # RAG utilities
+│   ├── core/                     # LLM + logic
+│
+├── data/                         # Knowledge base + embeddings
+├── backups/                      # Audit backups
+├── deliverables/                 # Reports and exports
+│
+├── requirements.txt
+└── README.md
 
