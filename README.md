@@ -40,3 +40,11 @@ Features:
 <img width="1197" height="750" alt="Screenshot 2025-09-21 184204" src="https://github.com/user-attachments/assets/3f30c747-10ce-4141-8b73-0f041fb1eeb2" />
 
 <img width="1920" height="1020" alt="Screenshot 2025-09-18 144808" src="https://github.com/user-attachments/assets/0f466d85-4e55-4cbb-a50b-a8d282a50fcf" />
+
+<img width="321" height="358" alt="Screenshot 2025-09-22 204954" src="https://github.com/user-attachments/assets/0d5ce030-bef7-43c0-9f5b-97dda6c1d8a1" />
+
+<img width="869" height="901" alt="image" src="https://github.com/user-attachments/assets/b5c4507e-a53e-41f9-a70e-ac5c11f5d080" />
+
+<img width="1686" height="920" alt="image" src="https://github.com/user-attachments/assets/390f568c-c666-40e8-859a-3e1506e4d1bd" />
+
+
